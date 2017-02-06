@@ -11,7 +11,7 @@
 
 	<?PHP include "header.php"; ?>
 
-	<div class="mod-bg">
+	<div class="mod-bg" id="new-stu-mod">
 		<div class="form mod" id="reg-student">
 			<form action="">
 				<div class="formheader">
@@ -72,7 +72,7 @@
 				</div>
 				<div class="buttons">
 					<input type="submit" value="Register" class="btn b-s">
-					<input type="button" value="Cancel" class="btn b-c">
+					<input type="button" value="Cancel" class="btn b-c" onclick="document.getElementById('new-stu-mod').style.display = 'none'"">
 				</div>
 			</form>
 		</div>
@@ -80,7 +80,7 @@
 
 	<div class="tbl v">
 		<div class="tbl-new-b-c">
-			<button type="button" class="btn b-s new-b-s">Register Student</button>
+			<button type="button" class="btn b-s new-b-s" id="new-stu-btn" onclick="document.getElementById('new-stu-mod').style.display = 'block' ">Register Student</button>
 		</div>
 		<h2>Students</h2>
 		
@@ -94,6 +94,8 @@
 				<th>Gender</th>
 				<th>Email</th>
 				<th>Mobile Number</th>
+				<th>ST Address</th>
+				<th>CT Address</th>
 			</tr>
 			<tr>
 				<td>01</td>
@@ -104,6 +106,8 @@
 				<td>Male</td>
 				<td>pereyra.neil18@gmail.com</td>
 				<td>09482448106</td>
+				<td>Quezon City?</td>
+				<td>Ano 'to hahaha</td>
 			</tr>
 			<tr>
 				<td>02</td>
@@ -114,6 +118,8 @@
 				<td>Male</td>
 				<td>christianvilla@gmail.com</td>
 				<td>0932184142</td>
+				<td>Manila City?</td>
+				<td>Ano ba</td>
 			</tr>
 		</table>
 	</div>
