@@ -6,13 +6,37 @@ header{
 /* = navigation
 **********************************************************************/
 nav{
+	/*background-color: red;*/
+	height: 35px;
+	width: 100%;
+	padding-left: 2.5%;
 }
 .n{
-	display: block;
-	background-color: red;
+	display: inline;
+	width: 100%;
 	list-style-type: none;
 }
-
-.n-block{
+.n-l{
+	display: block;
+	text-decoration: none;
+	width: 19%;
+	height: 100%;
 	float: left;
+	text-align: center;
+	padding-top: 10px;
+	/*text-transform: uppercase;*/
+	font-weight: bold;
+	letter-spacing: 1px;
+	font-family: 'Slabo 27px',serif;
+	font-size: 25px;
+	/*font-family: sans-serif;*/
+	color: black;
 }
+.n-l:hover{
+	border-bottom: 5px solid #DB504A;
+}
+.n-block{
+
+}
+
+
