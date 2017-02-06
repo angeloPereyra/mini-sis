@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assigment No. 2</title>
+	<meta charset="utf-8" lang="en-us">
+	<link rel="stylesheet" href="../css/normalize.css">
+	<link rel="stylesheet" href="old-hw-style-main.css">
+</head>
+<body>
+	<header>
+		<h1>Henry's Petfood Hideaway</h1>
+	</header>
+	<form action="#" class="form">
+		<div class="formheader">
+			<h2>Order Form</h2>
+		</div>
+		<div class="subform">
+			<h3 class="subheader">Shipping Address</h3>
+			<div class="align one">
+				<label for="name1">Name</label>
+				<input type="text" name= "name1" id="name1">
+			</div>
+			<div class="align two">
+				<label for="address1">Address</label>
+				<input type="text" id="address1">
+			</div>
+			<div class="align three">
+				<label for="city1">City</label>
+				<input type="text" id="city1" name="city1">
+				<label for="zip1" style="position: absolute; left: 425px;">Zip Code</label>
+				<input type="text" id="zip1" name="zip1">
+			</div>
+			<div class="align four">
+				<label for="state1">State</label>
+				<select name="state1" id="state1">
+					<option value="none">Choose a state</option>
+					<option value="State one">State one</option>
+					<option value="State two">State two</option>
+					<option value="State three">State three</option>
+				</select>
+			</div>
+			<div class="align five">
+				<label for="email1">E-mail</label>
+				<input type="email" name="email1" id="email1">
+				<label for="tel1" style="position: absolute; left: 421px;">Telephone</label>
+				<input type="text" name="tel1" id="tel1">
+			</div>
+		</div>
+		<div class="subform">
+			<h3 class="subheader">Billing Address</h3>
+			<div class="align one">
+				<label for="name2">Name</label>
+				<input type="text" name= "name2" id="name2">
+			</div>
+			<div class="align two">
+				<label for="address2">Address</label>
+				<input type="text" id="address2">
+			</div>
+			<div class="align three">
+				<label for="city2">City</label>
+				<input type="text" id="city2" name="city2">
+				<label for="zip2" style="position: absolute; left: 425px;">Zip Code</label>
+				<input type="text" id="zip2" name="zip2">
+			</div>
+			<div class="align four">
+				<label for="state2">State</label>
+				<select name="state2" id="state2">
+					<option value="none">Choose a state</option>
+					<option value="State one">State one</option>
+					<option value="State two">State two</option>
+					<option value="State three">State three</option>
+				</select>
+			</div>
+			<div class="align five">
+				<label for="email2">E-mail</label>
+				<input type="email" name="email2" id="email2">
+				<label for="tel2" style="position: absolute; left: 421px;">Telephone</label>
+				<input type="text" name="tel2" id="tel2">
+			</div>
+		</div>
+		<div class="tbl">
+			<h2>Products to order</h2>
+			<table>
+				<tr>
+					<th>Item</th>
+					<th>Quantity</th>
+					<th>Repeat Order</th>
+					<th>Price</th>
+					<th>Estimated Cost</th>
+				</tr>
+				<tr>
+					<td>Puppy Chow</td>
+					<td>
+						<select>
+							<option value="none">Choose a quantity</option>
+							<option value="option1">Option one</option>
+							<option value="option2">Option two</option>
+						</select>
+					</td>
+					<td><input type="checkbox"></td>
+					<td>@1.50 ex</td>
+					<td>0</td>
+				</tr>
+				<tr>
+					<td>Dog Food</td>
+					<td>
+						<select>
+							<option value="none">Choose a quantity</option>
+							<option value="option1">Option one</option>
+							<option value="option2">Option two</option>
+						</select>
+					</td>
+					<td><input type="checkbox"></td>
+					<td>@1.50 ex</td>
+					<td>0</td>
+				</tr>
+				<tr>
+					<td>Treats</td>
+					<td>
+						<select>
+							<option value="none">Choose a quantity</option>
+							<option value="option1">Option one</option>
+							<option value="option2">Option two</option>
+						</select></td>
+						<td><input type="checkbox"></td>
+						<td>@1.50 ex</td>
+						<td>0</td>
+					</tr>
+					<tr>
+						<td>More treats</td>
+						<td>Yes<input type="checkbox">
+							</td>
+							<td></td>
+							<td>@1.50 ex</td>
+							<td>0</td>
+						</tr>
+						<tr class="to-align">
+							<td colspan="4" >6.25% Sales Tax</td>
+							<td>0</td>
+						</tr>
+						<tr class="to-center">
+							<td colspan="4">Shipping Method 
+								<select name="shipmethod" id="shipmethod">
+									<option value="none">Select a shipping method</option>
+									<option value="Method one">method one</option>
+									<option value="Method two">method two</option>
+								</select>
+							</td>
+							<td></td>
+						</tr>
+						<tr class="to-align">
+							<td colspan="4">Total: </td>
+							<td>0</td>
+						</tr>
+					</table>
+				</div>
+				<div class="buttons">
+					<input type="submit" value="Submit" class="btn" onclick="javascript: alert('You\'ve pressed the submit button');">
+					<input type="reset" value="Reset" class="btn">
+				</div>
+			</form>
+		</body>
+		</html>

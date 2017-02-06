@@ -1,0 +1,202 @@
+/*
+*****************************************
+* = imports
+*****************************************
+*/
+@import url('https://fonts.googleapis.com/css?family=Slabo+27px');
+/*
+*****************************************
+* = global
+*****************************************
+*/
+select, input{
+	border: 1px solid #E9E9E9;
+	border-radius: 5px 5px 0px 0px;
+	width: 240px;
+	height: 20px;
+}
+h2,h3{
+	margin: 0;
+}
+
+label{
+	font-size: 18px;
+	letter-spacing: -0.5px;
+}
+body{
+	font-family: Calibri,sans-serif;
+}
+h3{
+
+}
+h3,h2, .tbl h2,.btn,header{
+	font-family: 'Slabo 27px',serif;
+	color: #234B61;
+}
+h3,h2, .tbl h2,{
+	font-size: 22px;
+}
+/*
+*****************************************
+* = header
+*****************************************
+*/
+
+header{
+	text-align: center;
+	background-color: rgba(40, 43, 45,0.9);
+}
+
+header h1{
+	margin: 0;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	font-size: 50px;
+	color: white;
+
+}
+/*
+*****************************************
+* = form
+*****************************************
+*/
+
+.form{
+	width: 55%;
+	margin: 100px auto;
+	background-color: #F3F5F5;
+	height: auto;
+	box-shadow: 0 0 10px black;
+	border-radius: 10px 10px 0px 0px;
+}
+
+
+.form .formheader{
+	margin:0;
+	background: linear-gradient(#237F99, #125E77);
+	border-radius: 10px 10px 0px 0px;
+
+}
+
+.form .formheader h2{
+	font-size: 46px;
+	padding: 15px 0;
+	color: #F1FCFF;
+}
+
+.formheader, .subform, .tbl, .buttons{
+	padding-left: 27px;
+	padding-right: 27px;
+}
+
+.subform{
+}
+
+.subheader, .tbl h2{
+	padding: 10px 0;
+	border-bottom: 1px solid #F88B00;
+}
+
+/*
+*****************************************
+* = some alignments
+*****************************************
+*/
+
+.align{
+	width: 100%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	position: relative;
+}
+.align:last-child{
+	margin: 0;
+}
+
+.align input, .align select{
+	position: absolute;
+	left: 161px;
+
+}
+
+.three input:last-child, .five input:last-child{
+	left: 500px;
+}
+.three input:last-child{
+	width: 75px;
+}
+
+.five input:last-child{
+	width: 125px;
+}
+
+/*
+*****************************************
+* = table
+*****************************************
+*/
+
+th:first-child,td:first-child{
+	text-align: left;
+}
+
+th{
+	border-bottom: 2px solid #DDDDDD;
+}
+
+tr,td{
+	border-bottom: 1px solid #DDDDDD;
+}
+tr:last-child td{
+	border-bottom: 0;
+}
+table{
+	margin-top: 10px;
+	width: 100%;
+}
+
+td{
+	text-align: center;
+	height: 30px;
+}
+
+/*
+*****************************************
+* = button
+*****************************************
+*/
+
+.buttons{
+	padding-left: 19%;
+	border-radius: 0 0 10px 10px;
+}
+.btn{
+	height: 40px;
+	font-size: 22px;
+
+	font-weight: 10px;
+
+	cursor: pointer;
+}
+
+
+.btn:first-child{
+	background: linear-gradient(#90A933, #7E9B32);
+	color: white;
+	border-radius: 5px;
+}
+
+/*
+*****************************************
+* = misc
+*****************************************
+*/
+
+.to-align td:first-child{
+	text-align: right;
+	font-weight: bold;
+}
+
+.to-center td{
+	text-align: center;
+}
