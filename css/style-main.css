@@ -1,0 +1,18 @@
+/* = header overrides
+**********************************************************************/
+header{
+}
+
+/* = navigation
+**********************************************************************/
+nav{
+}
+.n{
+	display: block;
+	background-color: red;
+	list-style-type: none;
+}
+
+.n-block{
+	float: left;
+}
