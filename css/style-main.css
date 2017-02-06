@@ -43,6 +43,16 @@ nav{
 
 }
 
+/* = modal
+**********************************************************************/
+.mod-bg{
+	display: none;
+	background-color: #6B6B6B;
+	height: 100%;
+	width: 100%;
+	padding-top: 50px;
+}
+
 
 /* = form overrides
 **********************************************************************/
@@ -56,8 +66,49 @@ nav{
 	margin-bottom: 20px;
 }
 
+.align input, .align select{
+	width: 500px;
+	height: 25px;
+	padding: 7px;
+}
+
+
+.align{
+	margin-top: 35px;
+}
+
+
+.label{
+}
+
+/* = table overrides
+**********************************************************************/
+.v{
+	margin-top: 80px;
+}
+
+.v h2{
+	font-size: 30px;
+}
+
+
+.tbl-new-b-c{
+	float: right;
+}
+
+.new-b-s{
+	height: 30px;
+	font-size: 17px;
+}
+
+.new-b-s::before{
+	content: "+  "
+}
 
 /* = per ID forms
 **********************************************************************/
-#reg-student{
+
+#stud_gender{
+	height: 40px;
+	width: 515px;
 }
