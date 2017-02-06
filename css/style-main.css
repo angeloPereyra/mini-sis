@@ -35,8 +35,29 @@ nav{
 .n-l:hover{
 	border-bottom: 5px solid #DB504A;
 }
+
+.n-sel{
+	border-bottom: 5px solid #DB504A;
+}
 .n-block{
 
 }
 
 
+/* = form overrides
+**********************************************************************/
+
+.form{
+	overflow: auto;
+}
+
+.buttons{
+	margin-top: 50px;
+	margin-bottom: 20px;
+}
+
+
+/* = per ID forms
+**********************************************************************/
+#reg-student{
+}

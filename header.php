@@ -13,16 +13,16 @@
 		<h1>Online Student Information System</h1>
 	</header>
 
-	<nav>
+	 <nav>
 		<ul class="n">
-			<a href="#" class="n-l"><li class="n-block">Student</li></a>
-			<a href="#" class="n-l"><li class="n-block">Faculty</li></a>
-			<a href="#" class="n-l"><li class="n-block">Course</li></a>
-			<a href="#" class="n-l"><li class="n-block">Subject</li></a>
-			<a href="#" class="n-l"><li class="n-block">Grade</li></a>
+			<a href="index.php" class="n-l"><li class="n-block">Student</li></a>
+			<a href="faculty.php" class="n-l"><li class="n-block">Faculty</li></a>
+			<a href="course.php" class="n-l"><li class="n-block">Course</li></a>
+			<a href="subject.php" class="n-l"><li class="n-block">Subject</li></a>
+			<a href="grade.php" class="n-l"><li class="n-block">Grade</li></a>
 		</ul>
 	</nav>
-	
+
 
 </body>
 </html>
