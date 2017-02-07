@@ -13,7 +13,7 @@
 
 	<div class="mod-bg" id="new-stu-mod">
 		<div class="form mod" id="reg-student">
-			<form action="">
+			<form method="post"	action="php/registerStudent.php">
 				<div class="formheader">
 					<h2>Register Student</h2>
 				</div>
@@ -90,6 +90,7 @@
 				<th>First Name</th>
 				<th>Middle Name</th>
 				<th>Last Name</th>
+				<th>Birthday</th>
 				<th>Age</th>
 				<th>Gender</th>
 				<th>Email</th>
@@ -97,30 +98,7 @@
 				<th>Street</th>
 				<th>City</th>
 			</tr>
-			<tr>
-				<td>01</td>
-				<td>Neil Angelo</td>
-				<td>Acuemo</td>
-				<td>Pereyra</td>
-				<td>18</td>
-				<td>Male</td>
-				<td>pereyra.neil18@gmail.com</td>
-				<td>09482448106</td>
-				<td>Quezon City?</td>
-				<td>Ano 'to hahaha</td>
-			</tr>
-			<tr>
-				<td>02</td>
-				<td>Christian Athen</td>
-				<td>Denila</td>
-				<td>Villa</td>
-				<td>12</td>
-				<td>Male</td>
-				<td>christianvilla@gmail.com</td>
-				<td>0932184142</td>
-				<td>Manila City?</td>
-				<td>Ano ba</td>
-			</tr>
+			<?PHP include "php/readStudent.php"; ?>
 		</table>
 	</div>
 </body>

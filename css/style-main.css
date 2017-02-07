@@ -111,7 +111,7 @@ nav{
 /* = per ID forms
 **********************************************************************/
 
-#stud_gender{
+#stud_gender,#f_gender{
 	height: 40px;
 	width: 515px;
 }
