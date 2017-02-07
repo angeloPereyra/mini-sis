@@ -94,7 +94,7 @@
 				<th>School Year</th>
 			</tr>
 
-			<?PHP include 'php/readCourse.php'; ?>
+			<?PHP include 'php/readSubject.php'; ?>
 		</table>
 	</div>
 </body>
