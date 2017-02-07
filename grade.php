@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Faculty | Online SIS</title>
+	<title>Grade | Online SIS</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="ref/old-hw-style-main.css">
@@ -78,29 +78,22 @@
 		</div>
 	</div>
 
-	<div class="tbl v">
+	<!-- <div class="tbl v" id="tbl-g">
 		<div class="tbl-new-b-c">
 			<button type="button" class="btn b-s new-b-s" id="new-stu-btn" onclick="document.getElementById('new-stu-mod').style.display = 'block' ">Register Faculty</button>
 		</div>
-		<h2>Faculties</h2>
+		<h2>Grade</h2>
 		
 		<table>
 			<tr>
-				<th>ID</th>
-				<th>First Name</th>
-				<th>Middle Name</th>
-				<th>Last Name</th>
-				<th>Birthday</th>
-				<th>Age</th>
-				<th>Gender</th>
-				<th>Email</th>
-				<th>Street</th>
-				<th>City</th>
+				<th>Course Code</th>
+				<th>Name</th>
+				<th>Description</th>
 				<th>Department Code</th>
 			</tr>
 
-			<?PHP include 'php/readFaculty.php'; ?>
+			<!-- <?PHP include 'php/readCourse.php'; ?> -->
 		</table>
-	</div>
+	</div> -->
 </body>
 </html>

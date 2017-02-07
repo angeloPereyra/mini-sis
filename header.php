@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Online Student Information System</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="ref/old-hw-style-main.css">
@@ -19,7 +18,7 @@
 			<a href="faculty.php" class="n-l"><li class="n-block">Faculty</li></a>
 			<a href="course.php" class="n-l"><li class="n-block">Course</li></a>
 			<a href="subject.php" class="n-l"><li class="n-block">Subject</li></a>
-			<a href="grade.php" class="n-l"><li class="n-block">Grade</li></a>
+			<a href="authenticate.php" class="n-l"><li class="n-block">Grade</li></a>
 		</ul>
 	</nav>
 

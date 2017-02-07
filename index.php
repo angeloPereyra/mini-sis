@@ -41,7 +41,7 @@
 					</div>
 					<div class="align">
 						<label for="stud_dob">Birthday: </label>
-						<input type="date" name= "stud_dob" id="stud_dob" required>
+						<input type="text" name= "stud_dob" id="stud_dob" required>
 					</div>
 					<div class="align">
 						<label for="stud_gender">Gender</label>

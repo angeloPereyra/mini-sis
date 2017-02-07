@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Student | Online SIS</title>
+	<title>Course | Online SIS</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="ref/old-hw-style-main.css">

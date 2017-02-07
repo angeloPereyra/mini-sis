@@ -81,7 +81,8 @@ nav{
 }
 
 
-.label{
+label:hover{
+	cursor: pointer;
 }
 
 /* = table overrides
@@ -111,7 +112,11 @@ nav{
 /* = per ID forms
 **********************************************************************/
 
-#stud_gender,#f_gender{
+#stud_gender,#f_gender,#u_acc_type{
 	height: 40px;
 	width: 515px;
+}
+
+#new-aut-mod{
+	display: block;
 }
