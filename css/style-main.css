@@ -1,8 +1,20 @@
 /* = header overrides
 **********************************************************************/
 header{
+	background: linear-gradient(#237F99, #125E77);
+	margin-left: 30px;
+	border-radius: 20px 0px 0px 20px;
+	margin-top: 10px;
 }
 
+header h1{
+	color: white;
+	padding-left: 20px;
+	text-align: left;
+	letter-spacing: -1px;
+	/*border-left: 34px solid #1784DA;*/
+	/*#0078D7*/
+}
 /* = navigation
 **********************************************************************/
 nav{
@@ -26,13 +38,21 @@ nav{
 	padding-top: 10px;
 	/*text-transform: uppercase;*/
 	font-weight: bold;
-	letter-spacing: 1px;
+	letter-spacing: 0px;
 	font-family: 'Slabo 27px',serif;
 	font-size: 25px;
 	/*font-family: sans-serif;*/
 	color: black;
+
+	/*-ms-transition:color .12s ease-out, background .23s ease-in, border .12s ease-in-out;
+ 	-webkit-transition:color .12s ease-out, background .23s ease-in, border .12s ease-in-out;
+*/
 }
 .n-l:hover{
+	/*border-bottom: 5px solid lime;
+	color:white;
+	border-radius: 20px 0px 0px 20px;
+	background: linear-gradient(#237F99, #125E77);*/
 	border-bottom: 5px solid #DB504A;
 }
 

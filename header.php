@@ -11,17 +11,5 @@
 	<header>
 		<h1>Online Student Information System</h1>
 	</header>
-
-	 <nav>
-		<ul class="n">
-			<a href="index.php" class="n-l"><li class="n-block">Student</li></a>
-			<a href="faculty.php" class="n-l"><li class="n-block">Faculty</li></a>
-			<a href="course.php" class="n-l"><li class="n-block">Course</li></a>
-			<a href="subject.php" class="n-l"><li class="n-block">Subject</li></a>
-			<a href="authenticate.php" class="n-l"><li class="n-block">Grade</li></a>
-		</ul>
-	</nav>
-
-
 </body>
 </html>

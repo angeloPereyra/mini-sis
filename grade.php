@@ -1,3 +1,6 @@
+<?PHP
+session_start();
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,68 +9,90 @@
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="ref/old-hw-style-main.css">
 	<link rel="stylesheet" href="css/style-main.css">
+
 </head>
 <body>
 
 	<?PHP include "header.php"; ?>
+	<?PHP include "nav.php"; ?>
 
 	<div class="mod-bg" id="new-stu-mod">
 		<div class="form mod" id="reg-faculty">
-			<form action="php/registerFaculty.php" method="post">
+			<form action="php/giveGrade.php" method="post">
 				<div class="formheader">
-					<h2>Register Faculty</h2>
+					<h2>Grade Student</h2>
 				</div>
 				<div class="subform">
-					<h3 class="subheader">Personal Information</h3>
 					<div class="align">
-						<label for="f_id">Faculty ID: </label>
-						<input type="text" name= "f_id" id="f_id" required>
-					</div>
-					<div class="align">
-						<label for="f_fname">First Name: </label>
-						<input type="text" name= "f_fname" id="f_fname" required>
-					</div>
-					<div class="align">
-						<label for="f_lname">Last Name: </label>
-						<input type="text" name= "f_lname" id="f_lname" required>
-					</div>
-					<div class="align">
-						<label for="f_mname">Middle Name: </label>
-						<input type="text" name= "f_mname" id="f_mname">
-					</div>
-					<div class="align">
-						<label for="f_age">Age: </label>
-						<input type="number" name= "f_age" id="f_age" required>
-					</div>
-					<div class="align">
-						<label for="f_dob">Birthday: </label>
-						<input type="text" name= "f_dob" id="f_dob" required>
-					</div>
-					<div class="align">
-						<label for="f_gender">Gender</label>
-						<select name="f_gender" id="f_gender">
-							<option value="M">Male</option>
-							<option value="F">Female</option>
+						<label for="f_id">Faculty: </label>
+						<select name="f_id" id="f_id" style="width: 515px; height: 40px;">
+							<?PHP
+							include "database.php";
+							$connection = mysqli_connect("localhost","root","","sis_main"); //your connection string 
+
+							$sql = "SELECT * FROM faculty";
+
+							$result = mysqli_query($connection,$sql);
+
+							while($row = mysqli_fetch_assoc($result)){
+
+								$id = $row['f_id'];
+								$name = "ID: {$id} | {$row['f_lname']}, {$row['f_fname']} {$row['f_mname']}";
+
+								echo "<option value=\"{$id}\">{$name}</option>";
+							}
+							?>
 						</select>
 					</div>
-				</div>
-				<div class="subform">
-					<h3 class="subheader">Contact</h3>
 					<div class="align">
-						<label for="f_stadd">Street: </label>
-						<input type="text" name= "f_stadd" id="f_stadd" required>
+						<label for="stud_id">Student: </label>
+						<select name="stud_id" id="stud_id" style="width: 515px; height: 40px;">
+							<?PHP
+							include "database.php";
+							$connection = mysqli_connect("localhost","root","","sis_main"); //your connection string 
+
+							$q_student = "SELECT * FROM student";
+
+							$result = mysqli_query($connection,$q_student);
+
+							while($row = mysqli_fetch_assoc($result)){
+
+								$stud_id = $row['stud_id'];
+								$stud_name = "ID: {$stud_id} | {$row['stud_lname']}, {$row['stud_fname']} {$row['stud_mname']}";
+
+								echo "<option value=\"{$stud_id}\">{$stud_name}</option>";
+							}
+							?>
+						</select>
 					</div>
 					<div class="align">
-						<label for="f_ctadd">City: </label>
-						<input type="text" name= "f_ctadd" id="f_ctadd" required>
+						<label for="subj_code">Subject: </label>
+						<select name="subj_code" id="subj_code" style="width: 515px; height: 40px;">
+							<?PHP
+							include "database.php";
+							$connection = mysqli_connect("localhost","root","","sis_main"); //your connection string 
+
+							$sql = "SELECT * FROM subject";
+
+							$result = mysqli_query($connection,$sql);
+
+							while($row = mysqli_fetch_assoc($result)){
+
+								$id = $row['subj_code'];
+								$name = "ID: {$id} | {$row['subj_name']}";
+
+								echo "<option value=\"{$id}\">{$name}</option>";
+							}
+							?>
+						</select>
 					</div>
 					<div class="align">
-						<label for="f_email">Email: </label>
-						<input type="email" name= "f_email" id="f_email" required>
+						<label for="mtgrade">Midterm Grade: </label>
+						<input type="text" name= "mtgrade" id="mtgrade" required placeholder="1.00">
 					</div>
 					<div class="align">
-						<label for="dept_id">Department Code: </label>
-						<input type="text" name= "dept_id" id="dept_id" required>
+						<label for="ftgrade">Final Term Grade: </label>
+						<input type="text" name= "ftgrade" id="ftgrade" required placeholder="1.00">
 					</div>
 				</div>
 				<div class="buttons">
@@ -78,22 +103,26 @@
 		</div>
 	</div>
 
-	<!-- <div class="tbl v" id="tbl-g">
+	<div class="tbl v" id="tbl-g">
 		<div class="tbl-new-b-c">
-			<button type="button" class="btn b-s new-b-s" id="new-stu-btn" onclick="document.getElementById('new-stu-mod').style.display = 'block' ">Register Faculty</button>
+			<button type="button" class="btn b-s new-b-s" id="new-stu-btn" onclick="document.getElementById('new-stu-mod').style.display = 'block' ">Grade Student</button>
 		</div>
-		<h2>Grade</h2>
+		<h2>Grades</h2>
 		
 		<table>
 			<tr>
-				<th>Course Code</th>
-				<th>Name</th>
-				<th>Description</th>
-				<th>Department Code</th>
+				<th>Student ID</th>
+				<th>Student Name</th>
+				<th>Faculty ID</th>
+				<th>Faculty Name</th>
+				<th>Subject Code</th>
+				<th>Subject Name</th>
+				<th>Midterm Grade</th>
+				<th>Final Term Grade</th>
 			</tr>
 
-			<!-- <?PHP include 'php/readCourse.php'; ?> -->
+			 <?PHP include 'php/readGrade.php'; ?> 
 		</table>
-	</div> -->
+	</div>
 </body>
 </html>

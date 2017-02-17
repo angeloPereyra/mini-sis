@@ -1,3 +1,6 @@
+<?PHP
+session_start();
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,6 +13,7 @@
 <body>
 
 	<?PHP include "header.php"; ?>
+	<?PHP include "nav.php"; ?>
 
 	<div class="mod-bg" id="new-stu-mod">
 		<div class="form mod" id="reg-faculty">

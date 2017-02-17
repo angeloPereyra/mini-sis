@@ -16,10 +16,13 @@ include "database.php";
 	$stud_gender = $_POST['stud_gender'];
 	$stud_ctadd = $_POST['stud_ctadd'];
 
-	$sql = "INSERT INTO student VALUES ('$stud_id','$stud_fname','$stud_lname','$stud_mname','$stud_stadd','$stud_ctadd','$stud_age','$stud_dob','$stud_gender','$stud_email_add','$stud_mobno');";
+	$sql = "INSERT INTO student VALUES ('$stud_id','$stud_fname','$stud_lname','$stud_mname','$stud_stadd','$stud_ctadd','$stud_age','$stud_dob','$stud_gender','$stud_email_add','$stud_mobno','pass');";
 
-	$result=mysqli_query($connection,$sql);
 
-	header("Location: ../index.php");
+
+	if(mysqli_query($connection,$sql))
+		header("Location: ../student.php");
+	else
+		echo "Error: ".mysqli_error($connection);
 
 	?>

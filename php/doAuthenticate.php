@@ -1,5 +1,5 @@
 <?php 
-	include "database.php";
+include "database.php";
 
 	$connection = mysqli_connect("localhost","root","","sis_main"); //your connection string 
 
@@ -46,7 +46,11 @@
 
 	if($verified)
 	{
-		header("Location: ../grade.php");
+		$_SESSION["username"] = $db_id;
+		$_SESSION["password"] = $db_pass;
+		$_SESSION["acc_type"] = $acc_type;
+		
+		header("Location: ../student.php");
 	}
 
 	echo "Account not found";

@@ -15,10 +15,15 @@ include "database.php";
 	$f_email = $_POST['f_email'];
 	$dept_id = $_POST['dept_id'];
 
-	$sql = "INSERT INTO faculty VALUES ('$f_id','$f_fname','$f_lname','$f_mname','$dept_id','$f_age','$f_dob','$f_gender','$f_email','$f_stadd','$f_ctadd');";
+	$sql = "INSERT INTO faculty VALUES ('$f_id','$f_fname','$f_lname','$f_mname','$dept_id','$f_age','$f_dob','$f_gender','$f_email','$f_stadd','$f_ctadd','pass');";
 
-	$result=mysqli_query($connection,$sql);
+	// $result=mysqli_query($connection,$sql);
 
-	header("Location: ../faculty.php");
+	// header("Location: ../faculty.php");
+
+	if(mysqli_query($connection,$sql))
+		header("Location: ../faculty.php");
+	else
+		echo mysqli_error();
 
 	?>
