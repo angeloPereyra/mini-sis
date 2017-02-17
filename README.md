@@ -1,1 +1,2 @@
-class-hw-02062017 (mini-SIS)
+# Mini SIS
+haha 3.0 grade ko dito saaaad :(
